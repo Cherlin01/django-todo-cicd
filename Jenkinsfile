@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('Checkout SCM') {
 			steps {
-				git(url: 'https://github.com/Cherlin01/owasp-dependency-check', branch: 'main', credentialsId: 'credentialid')
+				git 'https://github.com/Cherlin01/owasp-dependency-check.git'
 			}
 		}
 
